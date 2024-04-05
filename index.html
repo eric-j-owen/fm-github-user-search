@@ -1,28 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | GitHub user search app</title>
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
 
-  devfinder
-
-  Light
-  Dark
-
-  Search GitHub username...
-  Search
-
-  Joined
-
-  Repos
-  Followers
-  Following
-
-</body>
+    <title>Frontend Mentor | GitHub user search app</title>
+    <link rel="stylesheet" href="style.css" />
+    <style src="./script.js" defer></style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>devfinder</h1>
+        <button id="theme-mode" class="btn">Light Dark</button>
+      </header>
+      <main>
+        <form>
+          <label>
+            <input
+              type="text"
+              aria-label="Search field"
+              placeholder="Search GitHub username..."
+            />
+          </label>
+          <button id="search" class="btn">Search</button>
+        </form>
+        <section id="content">
+          <div id="intro"></div>
+          <div id="stats">
+            <p>Joined</p>
+            <p>Repos</p>
+            <p>Followers</p>
+            <p>Following</p>
+          </div>
+          <div id="links"></div>
+        </section>
+      </main>
+    </div>
+  </body>
 </html>
