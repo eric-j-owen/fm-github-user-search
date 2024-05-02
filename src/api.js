@@ -1,9 +1,11 @@
 const url = "https://api.github.com/users/";
 
-async function getUser(user) {
+async function getUserApi(user) {
   const response = await fetch(url + user);
   const data = await response.json();
-  console.log(data);
+  console.log(data)
+  return data;
 }
 
-export default getUser;
+
+export default getUserApi;
