@@ -1,18 +1,9 @@
-function Stats() {
+function Stats({ repos, followers, following }) {
   return (
     <div>
-      <div id="joined">
-        <p>Joined</p>
-      </div>
-      <div id="repos">
-        <p>Repos</p>
-      </div>
-      <div id="followers">
-        <p>Followers</p>
-      </div>
-      <div id="following">
-        <p>Following</p>
-      </div>
+      <p>Repos {repos}</p>
+      <p>Followers {followers}</p>
+      <p>Following {following}</p>
     </div>
   );
 }
