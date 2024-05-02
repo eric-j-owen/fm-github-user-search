@@ -5,8 +5,10 @@ function UserInfo({ userName, userHandle, userPicture, joined }) {
         <img src={userPicture} alt="" />
       </div>
       <div>
-        <h2>{userName}</h2>
-        <p>@{userHandle}</p>
+        <div>
+          <h2>{userName}</h2>
+          <p>@{userHandle}</p>
+        </div>
         <p>Joined {joined}</p>
       </div>
     </section>

@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 function SearchForm({handleSubmit}) {
-  const [user, setUser] = useState("");
+  const [query, setQuery] = useState("");
 
   function handleFormSubmit(e) {
     e.preventDefault();
@@ -9,7 +9,7 @@ function SearchForm({handleSubmit}) {
   }
 
   function handleChange(e) {
-    setUser(e.target.value)
+    setQuery(e.target.value)
   }
 
   return (
@@ -20,7 +20,7 @@ function SearchForm({handleSubmit}) {
           id="search-input"
           aria-label="Search field"
           placeholder="Search GitHub username..."
-          value={user}
+          value={query}
           onChange={handleChange}
         />
       </label>
